@@ -18,7 +18,7 @@ div.card{
     box-shadow: 0 0 3px 1px;
     margin: 0 auto;
     grid-template-columns: 0 auto 0;
-    gap: 1rem;
+    gap: 12px;
     grid-template-areas: 
         "image image image"
         "....  ....  ...."
