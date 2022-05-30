@@ -84,7 +84,7 @@ button.card-btn:hover{
 @media (min-width: 500px){
     div.card{
         max-width: 600px;
-        height: fit-content;
+        max-height: 70vh;
         grid-template-rows: 0 auto auto auto auto 0 ;
         grid-template-columns: 1fr 0 minmax(auto, 2fr) 0;
         grid-template-areas: 
@@ -102,12 +102,12 @@ button.card-btn:hover{
     }
 
     q.card-quote{
+        font-size: 1.3rem;
         grid-area: quote;
         align-self: start;
     }
 
     button.card-btn{
-        padding: .3em 1.6em;
         justify-self: start;
         align-self: start;
     }
