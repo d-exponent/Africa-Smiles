@@ -84,7 +84,7 @@ button.card-btn:hover{
 @media (min-width: 500px){
     div.card{
         max-width: 600px;
-        grid-template-rows: 0 minmax(auto, 1fr) minmax(auto, 1fr) auto auto 0 ;
+        grid-template-rows: 0 auto minmax(auto, 1fr) auto auto 0 ;
         grid-template-columns: 1fr 0 minmax(auto, 2fr) 0;
         grid-template-areas: 
             "image .... .... ...."
