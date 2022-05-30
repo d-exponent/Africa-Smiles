@@ -7,9 +7,7 @@ body{
     align-items: center;
 }
 
-div.card > *{
-    margin: 0;
-}
+ *{margin: 0;}
 
 div.card{
     background:linear-gradient(210deg, #284E78, #191A19 );
@@ -19,7 +17,7 @@ div.card{
     margin: 0 auto;
     grid-template-rows: 320px 0 auto auto auto auto 0 ;
     grid-template-columns: 0 auto 0;
-    gap: 12px;
+    gap: .8rem;
     grid-template-areas: 
         "image image image"
         "....  ....  ...."
@@ -85,8 +83,9 @@ button.card-btn:hover{
 
 @media (min-width: 500px){
     div.card{
-        max-width: 650px;
-        grid-template-rows: 0 1fr 1fr 1fr auto 0 ;
+        max-width: 600px;
+        height: fit-content;
+        grid-template-rows: 0 auto auto auto auto 0 ;
         grid-template-columns: 1fr 0 minmax(auto, 2fr) 0;
         grid-template-areas: 
             "image .... .... ...."
@@ -97,12 +96,18 @@ button.card-btn:hover{
             "image .... .... ....";
     }
 
+    div > *{
+        margin: 0;
+        padding: 0;
+    }
+
     q.card-quote{
         grid-area: quote;
         align-self: start;
     }
 
     button.card-btn{
+        padding: .3em 1.6em;
         justify-self: start;
         align-self: start;
     }
